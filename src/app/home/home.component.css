@@ -1,0 +1,78 @@
+/* Estilos del contenedor principal footer */
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 590px;
+    animation: aparece 1500ms;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* Animaciòn general al iniciar */
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Estilos de la imagen de perfil */
+.img{
+    width: 300px;
+    height: auto;
+    padding-top: 40px;
+}
+
+/* Estilos del contenedor del saludo "Hola soy Carla..." */
+.home_saludo{
+    padding-top: 90px;
+   
+}
+
+/* Estilos del saludo */
+.home_titulo{
+    color: var(--color-secundario);
+}
+
+/* Estilos de "Carla" */
+.home_tituloColor{
+    color: var(--color-primario);
+}
+
+/* Estilos del boton de redireccion a componente Contacto*/
+
+.boton_contacto{
+    background-color:var(--color-primario) ;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+   
+}
+
+
+/* MEDIA QUERYS */
+@media (max-width: 639px) {
+    .home_saludo{
+        padding-top: 0px;
+        width: 60%;
+    }
+    
+}
+
+
+@media (max-width: 360px) {
+    .home{
+        margin: 50px 0px 50px 0px;
+        height: auto;
+    }
+    .img{
+        width: 200px;
+        padding-top: 30px;
+
+    }
+    
+}
